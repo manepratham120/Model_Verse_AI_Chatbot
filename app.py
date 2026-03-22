@@ -12,7 +12,7 @@ st.set_page_config(
     page_title="Chatbot",
     page_icon="🤖",
     layout="wide",
-    initial_sidebar_state="expanded",   # ✅ sidebar open by default
+    initial_sidebar_state="auto",   # ✅ sidebar open by default
 )
 
 st.markdown("""
@@ -246,7 +246,6 @@ st.markdown("""
 MODEL_OPTIONS = {
     "Groq":   ["llama-3.3-70b-versatile", "gemma2-9b-it"],
     "Gemini": ["gemini-2.0-flash-lite", "gemini-2.5-flash"],
-    "OpenAI": ["gpt-4o-mini", "gpt-4o"],
     "Ollama": ["mistral", "gemma:2b"],
 }
 PROVIDER_ICONS = {"OpenAI": "🟢", "Gemini": "🔵", "Groq": "🟠", "Ollama": "🟣"}
